@@ -10,7 +10,7 @@
     "lint": "eslint --ext .jsx,.js,.tsx,.ts src/",
     "format": "prettier --write 'src/**/*{.js,.jsx,.ts,.tsx,.css}'",
     "fix": "npm run format && npm run lint -- --fix",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "zsh deploy.sh"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -29,7 +29,6 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "gh-pages": "^4.0.0",
     "prettier": "2.7.1",
     "sass": "^1.55.0",
     "typescript": "^4.6.4",
