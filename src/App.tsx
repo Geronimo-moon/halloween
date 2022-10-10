@@ -1,17 +1,11 @@
 import React from "react";
 
 const App = () => (
-    <div>
-      <h1>Vite + React</h1>
-      <div>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p>
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  );
+  <div>
+    <p>{`お久しぶりです。
+    \nやはり今回もいらっしゃいましたね。
+    \n只今お取次ぎ致しますので少々お待ちください。`}</p>
+  </div>
+);
 
 export default App;
