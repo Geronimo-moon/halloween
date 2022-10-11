@@ -1,11 +1,10 @@
 import React from "react";
+import Paragraph from "./Paragraph";
 
 const App = () => (
-  <div>
-    <p>{`お久しぶりです。
-    \nやはり今回もいらっしゃいましたね。
-    \n只今お取次ぎ致しますので少々お待ちください。`}</p>
-  </div>
+  <Paragraph>{`お久しぶりです。
+  \nやはり今回もいらっしゃいましたね。
+  \n只今お取次ぎ致しますので少々お待ちください。`}</Paragraph>
 );
 
 export default App;
