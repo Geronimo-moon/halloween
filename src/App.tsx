@@ -1,12 +1,10 @@
 import React, {useState} from "react";
 import Paragraph from "./Paragraph";
 
-const scrollTop = (): number => {
-  return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
-};
+
 
 const App = () => {
-  const [scroll, setScroll] = useState(() => scrollTop()); 
+  
 
   return (<>
     <Paragraph>{`音が出る場合・目まぐるしい画面変遷、その他
