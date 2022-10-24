@@ -8,7 +8,7 @@ type Props = {
 
 const Paragraph: React.FC<Props> = ({ children,scare }) => (
   <div className={scare ? `${Style.pg} ${Style.scare}`:Style.pg}>
-    <p>{children}</p>
+    <p>{() => children.replace(/\r?\n/g, '<br>')}</p>
   </div>
 );
 
