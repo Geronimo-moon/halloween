@@ -3,10 +3,11 @@ import Style from "./Paragraph.module.scss"
 
 type Props = {
   children: string;
+  scare: boolean;
 };
 
-const Paragraph: React.FC<Props> = ({ children }) => (
-  <div className={Style.pg}>
+const Paragraph: React.FC<Props> = ({ children,scare }) => (
+  <div className={scare ? `${Style.pg} ${Style.scare}`:Style.pg}>
     <p>{children}</p>
   </div>
 );
