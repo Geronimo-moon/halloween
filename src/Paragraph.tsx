@@ -1,14 +1,21 @@
 import React from "react";
-import Style from "./Paragraph.module.scss"
+import { css } from '@emotion/react'
 
 type Props = {
   children: string;
-  scare: boolean;
+  scare?: boolean;
 };
 
-const Paragraph: React.FC<Props> = ({ children,scare }) => (
-  <div className={scare ? `${Style.pg} ${Style.scare}`:Style.pg}>
-    <p>{() => children.replace(/\r?\n/g, '<br>')}</p>
+const stylePg = css`
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(255, 255, 255);
+`
+
+const styleScare = css`color: crimson;`
+
+const Paragraph: React.FC<Props> = ({ children, scare }) => (
+  <div css={scare ? [stylePg,styleScare]:stylePg}>
+    <p>{children}</p>
   </div>
 );
 
