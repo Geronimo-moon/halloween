@@ -33,6 +33,7 @@ module.exports = {
       { namedComponents: "arrow-function" },
     ],
     "react/require-default-props": "off",
+    "react/no-unknown-property": ["error", { "ignore": ["css"] }],
   },
   settings: {
     "import/resolver": {
