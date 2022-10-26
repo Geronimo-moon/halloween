@@ -1,17 +1,11 @@
-import React, {useState} from "react";
-import Paragraph from "./Paragraph";
+import React from "react";
+import Start from "./Start";
+import Style from "./App.module.scss";
 
-
-
-const App = () => {
-  
-
-  return (<>
-    <Paragraph>{`音が出る場合・目まぐるしい画面変遷、その他
-    \n精神的に痛めつけられる場合があります。予めご了承ください。`}</Paragraph>
-    <Paragraph>{
-      `この物語はフィクションです。`}</Paragraph>
-  </>);
-};
+const App = () => (
+  <div className={Style.app}>
+    <Start />
+  </div>
+);
 
 export default App;

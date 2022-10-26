@@ -1,14 +1,14 @@
 import React from "react";
-import Style from "./Paragraph.module.scss"
+import Style from "./Paragraph.module.scss";
 
 type Props = {
   children: string;
-  scare: boolean;
+  scare?: boolean;
 };
 
-const Paragraph: React.FC<Props> = ({ children,scare }) => (
-  <div className={scare ? `${Style.pg} ${Style.scare}`:Style.pg}>
-    <p>{() => children.replace(/\r?\n/g, '<br>')}</p>
+const Paragraph: React.FC<Props> = ({ children, scare = false }) => (
+  <div className={scare ? `${Style.pg} ${Style.scare}` : Style.pg}>
+    <p>{children}</p>
   </div>
 );
 

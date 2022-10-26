@@ -32,6 +32,7 @@ module.exports = {
       2,
       { namedComponents: "arrow-function" },
     ],
+    "react/require-default-props": "off",
   },
   settings: {
     "import/resolver": {
